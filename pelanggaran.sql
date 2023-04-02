@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Mar 2023 pada 08.22
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 7.4.24
+-- Waktu pembuatan: 02 Apr 2023 pada 09.50
+-- Versi server: 10.4.20-MariaDB
+-- Versi PHP: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -60,8 +60,7 @@ INSERT INTO `jurusan` (`id`, `jurusan`) VALUES
 (22, 'RPL'),
 (23, 'TOI'),
 (24, 'TKJ'),
-(25, 'TJKT'),
-(26, 'gg');
+(25, 'TJKT');
 
 -- --------------------------------------------------------
 
@@ -145,7 +144,9 @@ INSERT INTO `pelanggaran_siswa` (`id`, `tanggal`, `id_pelanggar`, `id_pelanggara
 (4, '2023-03-18 11:28:44', 9, 1, 'X'),
 (5, '2023-03-18 12:31:47', 9, 4, 'XI'),
 (6, '2023-03-18 12:32:49', 9, 2, 'XI'),
-(7, '2023-03-18 13:50:28', 10, 4, 'XII');
+(7, '2023-03-18 13:50:28', 10, 4, 'XII'),
+(8, '2023-04-02 10:18:46', 10, 1, 'XI'),
+(9, '2023-04-02 10:27:06', 10, 1, 'X');
 
 -- --------------------------------------------------------
 
@@ -245,7 +246,7 @@ ALTER TABLE `pelanggaran`
 -- AUTO_INCREMENT untuk tabel `pelanggaran_siswa`
 --
 ALTER TABLE `pelanggaran_siswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
